@@ -1,0 +1,6 @@
+<h1>Editing Staff</h1>
+
+  <%= render 'form', staff: @staff %>
+
+  <%= link_to 'Show', company_staff_path(@company, @staff) %> |
+  <%= link_to 'Back', company_staffs_path(@company) %>

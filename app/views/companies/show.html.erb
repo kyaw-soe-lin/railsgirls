@@ -1,0 +1,7 @@
+<h1>会社詳細ページ</h1>
+  <p><%= @company.name %></p>
+  <p><%= @company.description %></p>
+  
+  <p><%= link_to 'Delete', company_path(@company), method: :delete, data: { confirm: '削除してもよろしいですか？' } %></p>
+  <p><%= link_to '従業員の一覧', company_staffs_path(@company) %></p>
+
